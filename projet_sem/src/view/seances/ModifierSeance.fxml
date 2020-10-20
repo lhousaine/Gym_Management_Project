@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="485.0" prefWidth="537.0" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.seance.ChangerparamController">
+   <children>
+      <Pane prefHeight="92.0" prefWidth="537.0" style="-fx-background-color: gray;">
+         <children>
+            <Label layoutX="174.0" layoutY="10.0" prefHeight="55.0" prefWidth="307.0" text="Kech Club" textFill="#35c7eb">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="72.0" fitWidth="86.0" layoutX="60.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <TextField fx:id="sports" layoutX="142.0" layoutY="146.0" prefHeight="42.0" prefWidth="248.0" promptText="enterer le nom" />
+      <TextField fx:id="entraineur" layoutX="142.0" layoutY="367.0" prefHeight="42.0" prefWidth="248.0" promptText="Entrer le nom d'Entraineur " />
+      <Button fx:id="annuler" layoutX="14.0" layoutY="435.0" mnemonicParsing="false" onAction="#ModificationAnnulerAction" prefHeight="42.0" prefWidth="98.0" style="-fx-background-color: #0ad61f;" text="Annuler" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="valider" layoutX="425.0" layoutY="435.0" mnemonicParsing="false" onAction="#ModificationVliderAction" prefHeight="42.0" prefWidth="98.0" style="-fx-background-color: #0ad61f;" text="Valider" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <ChoiceBox fx:id="temps_de_journe" layoutX="145.0" layoutY="230.0" prefHeight="42.0" prefWidth="248.0" />
+      <ChoiceBox fx:id="jour" layoutX="142.0" layoutY="298.0" prefHeight="42.0" prefWidth="248.0" />
+   </children>
+</AnchorPane>

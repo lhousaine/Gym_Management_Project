@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" onKeyPressed="#ActionLogin" prefHeight="407.0" prefWidth="413.0" style="-fx-background-color: Gray;" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginContrller">
+   <children>
+      <TextField fx:id="Username" layoutX="78.0" layoutY="116.0" prefHeight="25.0" prefWidth="241.0" promptText="Username" />
+      <Button fx:id="login" layoutX="144.0" layoutY="226.0" mnemonicParsing="false" onAction="#LoginAction" prefHeight="39.0" prefWidth="110.0" style="-fx-background-color: #1ab0dd;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <ImageView fx:id="iduser" fitHeight="33.0" fitWidth="31.0" layoutX="39.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ac7256a56da1fa7c09a699ddec407e7e-human.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="idmp" fitHeight="31.0" fitWidth="38.0" layoutX="39.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/password-icon.png.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="idloading" fitHeight="53.0" fitWidth="92.0" layoutX="159.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/loading-gif-transparent-10.gif" />
+         </image>
+      </ImageView>
+      <Text fx:id="nom" fill="#1ab0dd" layoutX="99.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   Kech  Club" wrappingWidth="299.13671875">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="idimg" fitHeight="90.0" fitWidth="92.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo_runner_reg-2_reg.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="Userpassword" layoutX="78.0" layoutY="183.0" prefHeight="25.0" prefWidth="241.0" promptText="password" />
+      <Button fx:id="ForgetPass" layoutX="133.0" layoutY="280.0" mnemonicParsing="false" onAction="#ForgetPassAction" prefHeight="31.0" prefWidth="131.0" style="-fx-background-color: none;" text="password forgot?" textFill="#1ab0dd" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="newpassError" layoutX="54.0" layoutY="311.0" prefHeight="25.0" prefWidth="293.0" textFill="#eb0905" />
+   </children>
+</AnchorPane>

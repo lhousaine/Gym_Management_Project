@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="587.0" prefWidth="598.0" style="-fx-background-color: #0ee0e0;" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Entraineurs.AjoutEntraineurAction">
+   <children>
+      <Label alignment="BASELINE_CENTER" layoutX="14.0" layoutY="115.0" prefHeight="76.0" prefWidth="314.0" style="-fx-background-color: #0ee0e0;" text="Ajouter un Nouveau Entraineur" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="232.0" text="Nom" />
+      <Label layoutX="24.0" layoutY="296.0" text="PréNom" />
+      <Label layoutX="319.0" layoutY="296.0" prefHeight="17.0" prefWidth="32.0" text="CNI" />
+      <TextField fx:id="prenom" layoutX="101.0" layoutY="292.0" prefHeight="25.0" prefWidth="180.0" />
+      <TextField fx:id="numTel" layoutX="388.0" layoutY="363.0" prefHeight="25.0" prefWidth="180.0" />
+      <TextField fx:id="cni" layoutX="388.0" layoutY="292.0" prefHeight="25.0" prefWidth="180.0" />
+      <TextField fx:id="nom" layoutX="101.0" layoutY="228.0" prefHeight="25.0" prefWidth="180.0" />
+      <TextField fx:id="email" layoutX="101.0" layoutY="363.0" prefHeight="25.0" prefWidth="180.0" />
+      <Label layoutX="24.0" layoutY="367.0" prefHeight="17.0" prefWidth="42.0" text="Email" />
+      <Button fx:id="Annuler" layoutX="19.0" layoutY="531.0" mnemonicParsing="false" onAction="#AnuulerAjEntrAction" prefHeight="31.0" prefWidth="78.0" style="-fx-background-color: #17c51a;" text="Annuler" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="valider" layoutX="490.0" layoutY="531.0" mnemonicParsing="false" onAction="#AjoutENtrAction" prefHeight="31.0" prefWidth="78.0" style="-fx-background-color: #17c51a;" text="Valider" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="305.0" layoutY="367.0" prefHeight="17.0" prefWidth="60.0" text="Num Tel" />
+      <TextField fx:id="Sportname" layoutX="388.0" layoutY="432.0" prefHeight="25.0" prefWidth="180.0" />
+      <Label fx:id="Sport" layoutX="305.0" layoutY="436.0" prefHeight="17.0" prefWidth="60.0" text="sport" />
+      <TextField fx:id="Experience" layoutX="101.0" layoutY="432.0" prefHeight="25.0" prefWidth="180.0" />
+      <Label layoutX="15.0" layoutY="436.0" prefHeight="17.0" prefWidth="60.0" text="Experience" />
+      <TextField fx:id="passmentSal" layoutX="388.0" layoutY="490.0" prefHeight="25.0" prefWidth="180.0" />
+      <Label layoutX="286.0" layoutY="490.0" prefHeight="25.0" prefWidth="95.0" text="Passement Saliare" />
+      <ImageView fx:id="enraineurphoto" fitHeight="137.0" fitWidth="191.0" layoutX="365.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="selectectimage" layoutX="413.0" layoutY="240.0" mnemonicParsing="false" onAction="#selectionerimage" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #17c51a;" text="select Image" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Pane prefHeight="83.0" prefWidth="598.0" style="-fx-background-color: gray;">
+         <children>
+            <Label layoutX="194.0" layoutY="7.0" prefHeight="70.0" prefWidth="237.0" text="Kech Club" textFill="#4fb8f5">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="salaire" layoutX="101.0" layoutY="490.0" prefHeight="25.0" prefWidth="180.0" />
+      <Label layoutX="16.0" layoutY="494.0" prefHeight="17.0" prefWidth="67.0" text="Saliare ment" />
+   </children>
+</AnchorPane>

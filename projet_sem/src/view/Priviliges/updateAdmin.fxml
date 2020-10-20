@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="209.0" prefWidth="322.0" style="-fx-background-color: #24a7d6;" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Admin.updateAdminController">
+   <children>
+      <Button fx:id="annuler" layoutX="14.0" layoutY="165.0" mnemonicParsing="false" onAction="#AnnulerAction" style="-fx-background-color: #08ea45;" text="annuler" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="valider" layoutX="233.0" layoutY="165.0" mnemonicParsing="false" onAction="#ValiderAction" style="-fx-background-color: #08ea45;" text="Valider" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="AdminId" layoutX="67.0" layoutY="105.0" prefHeight="25.0" prefWidth="170.0" promptText="Enter the Admin CNI" />
+      <Pane layoutY="-3.0" prefHeight="76.0" prefWidth="322.0" style="-fx-background-color: gray;">
+         <children>
+            <Label layoutX="62.0" layoutY="8.0" prefHeight="66.0" prefWidth="217.0" text="Kech Club" textFill="#4fb8f5">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

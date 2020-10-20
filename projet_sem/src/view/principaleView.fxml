@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1050.0" style="-fx-background-color: #0399bf;" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.contPrincipalecontroller">
+   <children>
+      <Label layoutX="447.0" layoutY="30.0" prefHeight="45.0" prefWidth="376.0" text="Kech Club" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <VBox prefHeight="651.0" prefWidth="150.0" style="-fx-background-color: #50574f;">
+         <children>
+            <Button fx:id="Acceuil" mnemonicParsing="false" onAction="#AcceuilAction" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #50574f;" text="Acceuil" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Button fx:id="Sports" mnemonicParsing="false" onAction="#SportsAction" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #50574f;" text="Sports" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Button fx:id="Entraineurs" mnemonicParsing="false" onAction="#EntraineursAction" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #50574f;" text="Entraineurs" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Button fx:id="Seances" mnemonicParsing="false" onAction="#SeancesAction" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #50574f;" text="Séances" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Button fx:id="Clients" mnemonicParsing="false" onAction="#ClientsAction" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #50574f;" text="Clients" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="Tarifs" mnemonicParsing="false" onAction="#TarifsAction" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #50574f;" text="Tarifs" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Button fx:id="Payments" mnemonicParsing="false" onAction="#PaymentsAction" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #50574f;" text="Payements" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="privilige" mnemonicParsing="false" onAction="#priviligeAction" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #50574f;" text="Priviligés" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <Button fx:id="LogOut" layoutX="945.0" layoutY="37.0" mnemonicParsing="false" onAction="#LogoutAction" style="-fx-background-color: #08d620;" text="LogOut" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="homePane" layoutX="150.0" layoutY="91.0" prefHeight="560.0" prefWidth="910.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label fx:id="adm" layoutX="25.0" layoutY="402.0" prefHeight="17.0" prefWidth="179.0" textFill="WHITE" visible="false" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
